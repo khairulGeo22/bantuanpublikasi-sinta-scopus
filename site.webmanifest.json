@@ -1,0 +1,27 @@
+{
+  "name": "Simpul Insight Academy",
+  "short_name": "SimpulInsight",
+  "description": "Pusat Pengayaan Wawasan, Pendampingan Tesis/Disertasi & Publikasi Scopus Terpercaya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0d9488",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

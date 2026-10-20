@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- MASTER FAVICON INTEGRATION -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0d9488">
+
+    <!-- METRICS & SEO OPTIMIZATION -->
+    <title>Simpul Insight Academy | Akselerasi Publikasi Scopus & Pendampingan Tesis Disertasi</title>
+    <meta name="description" content="Lembaga Pengembangan Keahlian Resmi. Ikuti Writing Bootcamp intensif, Bimbingan Tesis/Disertasi, dan Layanan Pendampingan Jurnal Scopus Q1-Q4 terpercaya bersama mitra Akademik Solusi BNA.">
+    <meta name="keywords" content="Skill Academy, ExpertClass, Academic Bootcamp, Pendampingan Scopus, Publikasi Jurnal, Bimbingan Tesis Banda Aceh, Akademik Solusi BNA, Simpul Academy">
+    <meta name="robots" content="index, follow">
+
+    <!-- OPEN GRAPH PROTOCOL -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Simpul Insight Academy | Akselerasi Publikasi & Bimbingan Akademik">
+    <meta property="og:description" content="Ubah draf akademik Anda menjadi publikasi jurnal internasional bereputasi & selesaikan Tesis/Disertasi tanpa kendala.">
+    <meta property="og:image" content="/apple-touch-icon.png">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-deep: #0f172a;
+            --secondary-teal: #0d9488;
+            --accent-coral: #f43f5e;
+            --accent-gold: #f59e0b;
+            --neutral-light: #f8fafc;
+            --text-dark: #334155;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-serif: 'Lora', serif;
+            --base-font-size: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: var(--base-font-size);
+            color: var(--text-dark);
+            background-color: var(--neutral-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            transition: font-size 0.2s ease;
+        }
+
+        /* BANNER PROMO / IKLAN ATAS (Fast-Track Inspired) */
+        .promo-banner {
+            background: linear-gradient(90deg, #be123c, #f43f5e, #be123c);
+            color: #fff;
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .promo-banner .tag-flash {
+            background: var(--accent-gold);
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            animation: pulse 1.5s infinite;
+        }
+        .promo-banner a {
+            color: #fff;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+
+        /* Accessibility Toolbar */
+        .accessibility-bar {
+            background-color: var(--primary-deep);
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+        }
+        .accessibility-bar .partner-badge {
+            color: #cbd5e1;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .accessibility-bar .partner-badge span {
+            color: var(--secondary-teal);
+            font-weight: 700;
+        }
+        .accessibility-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .accessibility-controls span { color: #94a3b8; }
+        .btn-font {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border: none;
+            padding: 4px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .btn-font:hover {
+            background-color: var(--secondary-teal);
+        }
+
+        /* Header Navigation */
+        header {
+            background: #fff;
+            padding: 16px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--primary-deep);
+            text-decoration: none;
+        }
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--secondary-teal);
+            color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--secondary-teal); }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px 5%;
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%);
+            position: relative;
+            overflow: hidden;
+            gap: 40px;
+        }
+        .hero-text {
+            max-width: 600px;
+            z-index: 2;
+        }
+        .hero-text h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--primary-deep);
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            color: #475569;
+            margin-bottom: 30px;
+        }
+        .cta-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary {
+            background-color: var(--secondary-teal);
+            color: #fff;
+            box-shadow: 0 10px 15px -3px rgba(13, 148, 136, 0.3);
+        }
+        .btn-secondary {
+            background-color: #fff;
+            color: var(--primary-deep);
+            border: 2px solid var(--primary-deep);
+        }
+        .btn-accent {
+            background-color: var(--accent-coral);
+            color: #fff;
+            box-shadow: 0 10px 15px -3px rgba(244, 63, 94, 0.3);
+        }
+
+        /* Hero Graphic Blob */
+        .hero-visual {
+            position: relative;
+            z-index: 2;
+        }
+        .blob {
+            width: 360px;
+            height: 360px;
+            background: linear-gradient(45deg, var(--secondary-teal) 0%, var(--accent-coral) 100%);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite alternate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .blob-content h3 { font-size: 1.8rem; margin: 0; }
+        .blob-content p { margin: 5px 0 0; font-size: 0.95rem; opacity: 0.9; }
+
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 30% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+
+        /* SECTION AD SPOTS / HIGHLIGHT ADS (Inspired by MasterAcademy & Bimbingan Tesis) */
+        .ad-highlight-grid {
+            padding: 40px 5% 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .ad-card {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid var(--accent-gold);
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .ad-card.alert {
+            border-left-color: var(--accent-coral);
+            background: linear-gradient(135deg, #881337, #4c0519);
+        }
+        .ad-card h4 {
+            margin: 0 0 8px;
+            font-size: 1.2rem;
+            color: #fde047;
+        }
+        .ad-card p {
+            font-size: 0.9rem;
+            margin: 0 0 15px;
+            color: #cbd5e1;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            padding: 50px 5% 20px;
+        }
+        .section-title h2 {
+            font-size: 2.1rem;
+            color: var(--primary-deep);
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services & Pricing Cards */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px 5% 60px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: all 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border-color: var(--secondary-teal);
+        }
+        .card.popular {
+            border: 2px solid var(--accent-coral);
+        }
+        .badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--accent-coral);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .card h3 {
+            font-size: 1.35rem;
+            margin-top: 0;
+            color: var(--primary-deep);
+        }
+        .card .price {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: var(--secondary-teal);
+            margin: 15px 0;
+        }
+        .card ul {
+            padding-left: 20px;
+            margin-bottom: 30px;
+            color: #475569;
+        }
+        .card li { margin-bottom: 10px; }
+
+        /* KEMITRAAN STRATEGIS SECTION (Akademik Solusi BNA) */
+        .partner-section {
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 60px 5%;
+        }
+        .partner-box {
+            background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+            border: 1px solid #99f6e4;
+            border-radius: 16px;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .partner-info {
+            max-width: 650px;
+        }
+        .partner-info h3 {
+            color: var(--primary-deep);
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+        .partner-tag {
+            display: inline-block;
+            background: var(--secondary-teal);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        /* Comparison Table */
+        .table-section {
+            padding: 40px 5% 80px;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            min-width: 700px;
+        }
+        th {
+            background-color: var(--primary-deep);
+            color: #fff;
+            padding: 18px;
+            font-weight: 600;
+        }
+        td {
+            padding: 18px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #475569;
+        }
+        tr:hover td { background-color: #f1f5f9; }
+        .scopus-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-deep);
+            color: #94a3b8;
+            padding: 50px 5% 30px;
+            font-size: 0.9rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col li { margin-bottom: 10px; }
+        .footer-col a { color: #94a3b8; text-decoration: none; }
+        .footer-col a:hover { color: #fff; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* FLOATING PWA INSTALL BUTTON */
+        #pwaInstallBtn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            display: none;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-text h1 { font-size: 2rem; }
+            .cta-group { justify-content: center; }
+            .blob { width: 280px; height: 280px; }
+            nav { display: none; } /* Simplified for mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BANNER PROMO KILAT (Inspired by Master Academy / Bimbingan Tesis Fast Track) -->
+    <div class="promo-banner">
+        <span class="tag-flash">FLASH SALE PROGRAM</span>
+        <span>🔥 Diskon 30% Pendampingan Scopus Q1-Q4 & Fast-Track Tesis/Disertasi Minggu Ini!</span>
+        <a href="https://wa.me/6281234567890?text=Halo%20Simpul%20Insight,%20saya%20ingin%20klaim%20Promo%20Fast-Track" target="_blank">Klaim Slot Promo →</a>
+    </div>
+
+    <!-- ACCESSIBILITY BAR FOR SENIOR ACADEMICS -->
+    <div class="accessibility-bar">
+        <div class="partner-badge">
+            Official Academic Partner: <span>Akademik Solusi BNA</span> (Banda Aceh)
+        </div>
+        <div class="accessibility-controls">
+            <span>Ukuran Teks:</span>
+            <button class="btn-font" onclick="adjustFontSize(-1)" title="Kecilkan Font">A-</button>
+            <button class="btn-font" onclick="resetFontSize()" title="Reset Font">A</button>
+            <button class="btn-font" onclick="adjustFontSize(1)" title="Besarkan Font">A+</button>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <a href="#" class="logo-area">
+            <div class="logo-icon">S</div>
+            <span>Simpul Insight Academy</span>
+        </a>
+        <nav>
+            <a href="#layanan">Layanan</a>
+            <a href="#mitra">Mitra Banda Aceh</a>
+            <a href="#scopus">Jurnal Scopus</a>
+            <a href="#bootcamp">Writing Bootcamp</a>
+            <a href="#kontak" class="btn btn-primary" style="padding: 8px 16px; color: #fff;">Konsultasi Gratis</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Akselerasi Publikasi Scopus & Bimbingan Akademik Terstruktur</h1>
+            <p>Ubah draf skripsi, tesis, disertasi, dan artikel ilmiah Anda menjadi publikasi bereputasi internasional bersama tim pakar mentor berpengalaman.</p>
+            <div class="cta-group">
+                <a href="#layanan" class="btn btn-primary">Lihat Program & Biaya</a>
+                <a href="https://wa.me/6281234567890?text=Halo%20Simpul%20Academy,%20saya%20ingin%20konsultasi%20draf%20jurnal" target="_blank" class="btn btn-secondary">Konsultasi WA Langsung</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="blob">
+                <div class="blob-content">
+                    <h3>98.4%</h3>
+                    <p>Tingkat Lolos Review Jurnal Scopus & Kelulusan Tesis/Disertasi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT AD SPOTS (Promotional Callouts) -->
+    <section class="ad-highlight-grid">
+        <div class="ad-card alert">
+            <h4>🚨 Layanan Darurat Tesis & Disertasi</h4>
+            <p>Batas deadline kelulusan makin dekat? Dapatkan pendampingan intensif pembenahan metodologi, analisis data SPSS/NVivo, dan konsultasi privat.</p>
+            <a href="https://wa.me/6281234567890?text=Konsultasi%20Darurat%20Tesis" class="btn btn-accent" style="padding: 6px 14px; font-size: 0.85rem;">Bantu Tesis Saya →</a>
+        </div>
+        <div class="ad-card">
+            <h4>⚡ Fast-Track Scopus Q1-Q4</h4>
+            <p>Garansi pendampingan dari perbaikan draf, translating/proofreading standar internasional, hingga response letter reviewer.</p>
+            <a href="#scopus" class="btn btn-primary" style="padding: 6px 14px; font-size: 0.85rem; background: var(--accent-gold); color: #000;">Cek Jangkauan Scopus →</a>
+        </div>
+    </section>
+
+    <!-- SECTION TITLE: LAYANAN UTAMA (Simpul Academy & Akademik Solusi BNA) -->
+    <div class="section-title" id="layanan">
+        <h2>Layanan Unggulan Simpul Academy</h2>
+        <p>Program bimbingan komprehensif yang dirancang fleksibel untuk Mahasiswa, Dosen, dan Peneliti Profesional.</p>
+    </div>
+
+    <!-- PRICING / SERVICES CARDS GRID -->
+    <section class="grid-container">
+        <!-- Card 1: Writing Bootcamp -->
+        <div class="card" id="bootcamp">
+            <div>
+                <h3>Writing Bootcamp Intensif</h3>
+                <p style="color: #64748b; font-size: 0.9rem;">Pelatihan Menulis Artikel Ilmiah Siap Submit Jurnal Bereputasi</p>
+                <div class="price">Rp 750.000 <span style="font-size: 0.9rem; font-weight: normal; color: #64748b;">/ program</span></div>
+                <ul>
+                    <li>4x Sesi Virtual Live Coaching</li>
+                    <li>Template Menulis Standar Scopus/Sinta</li>
+                    <li>Review Draf Asli dari Mentor Pakar</li>
+                    <li>Sertifikat Pelatihan Resmi</li>
+                </ul>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Daftar%20Writing%20Bootcamp" class="btn btn-secondary">Daftar Bootcamp</a>
+        </div>
+
+        <!-- Card 2: Scopus Mentoring (POPULAR) -->
+        <div class="card popular">
+            <span class="badge">PALING DIMINATI</span>
+            <div>
+                <h3>Pendampingan Scopus Q1-Q4</h3>
+                <p style="color: #64748b; font-size: 0.9rem;">Bimbingan End-to-End Publikasi Internasional</p>
+                <div class="price">Rp 3.500.000 <span style="font-size: 0.9rem; font-weight: normal; color: #64748b;">/ draf</span></div>
+                <ul>
+                    <li>Bedah Structural & Novelty Artikel</li>
+                    <li>Translate & Academic Proofreading</li>
+                    <li>Pencarian Target Jurnal Presisi</li>
+                    <li>Pendampingan Revisi Reviewer</li>
+                </ul>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Konsultasi%20Pendampingan%20Scopus" class="btn btn-primary">Pilih Pendampingan</a>
+        </div>
+
+        <!-- Card 3: Bimbingan Tesis & Disertasi (Mitra BNA) -->
+        <div class="card">
+            <div>
+                <h3>Bimbingan Tesis & Disertasi</h3>
+                <p style="color: #64748b; font-size: 0.9rem;">Kolaborasi Bersama Akademik Solusi BNA</p>
+                <div class="price">Custom Paket <span style="font-size: 0.9rem; font-weight: normal; color: #64748b;">/ sesuai kebutuhan</span></div>
+                <ul>
+                    <li>Pendampingan Bab 1 s/d Bab 5</li>
+                    <li>Olah Data Kuantitatif & Kualitatif</li>
+                    <li>Bukan Joki, Murni Bimbingan & Partner</li>
+                    <li>Opsi Bimbingan Tatap Muka / Online</li>
+                </ul>
+            </div>
+            <a href="https://www.akademiksolusibna.online/" target="_blank" class="btn btn-secondary">Kunjungi Mitra BNA</a>
+        </div>
+    </section>
+
+    <!-- KEMITRAAN STRATEGIS SECTION -->
+    <section class="partner-section" id="mitra">
+        <div class="partner-box">
+            <div class="partner-info">
+                <span class="partner-tag">MITRA PENGEMBANGAN RESMI</span>
+                <h3>Akademik Solusi BNA (Banda Aceh)</h3>
+                <p style="font-family: var(--font-serif); font-size: 1.1rem; color: #334155;">
+                    <em>"Bukan Joki, Tapi Partner Bimbingan Anda"</em>
+                </p>
+                <p>Khusus wilayah Banda Aceh dan sekitarnya, kami bekerjasama dengan <strong>Akademik Solusi BNA</strong> untuk menyediakan layanan bimbingan tatap muka (offline) & online secara intensif untuk penyusunan proposal, riset, tesis, dan disertasi.</p>
+            </div>
+            <div>
+                <a href="https://www.akademiksolusibna.online/" target="_blank" class="btn btn-primary" style="background: var(--primary-deep);">Buka Web Akademik Solusi BNA →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCOPUS JOURNAL COMPARISON TABLE -->
+    <section class="table-section" id="scopus">
+        <div class="section-title">
+            <h2>Kategori Pendampingan Jurnal Scopus</h2>
+            <p>Pilih tingkatan kuartil jurnal yang sesuai dengan target kinerja akademik Anda.</p>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Target Kuartil</th>
+                        <th>Estimasi Review</th>
+                        <th>Cakupan Bimbingan</th>
+                        <th>Tingkat Kesulitan</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="scopus-tag">Scopus Q1</span></td>
+                        <td>3 - 6 Bulan</td>
+                        <td>Novelty High-Impact, Translation, Proofreading, Rebuttal Letter</td>
+                        <td>Tinggi (High)</td>
+                        <td><a href="https://wa.me/6281234567890?text=Konsultasi%20Scopus%20Q1" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.8rem;">Pilih Q1</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="scopus-tag">Scopus Q2</span></td>
+                        <td>2 - 4 Bulan</td>
+                        <td>Standard Novelty Check, Language Editing, Journal Matching</td>
+                        <td>Sedang - Tinggi</td>
+                        <td><a href="https://wa.me/6281234567890?text=Konsultasi%20Scopus%20Q2" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.8rem;">Pilih Q2</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="scopus-tag">Scopus Q3 & Q4</span></td>
+                        <td>1 - 3 Bulan</td>
+                        <td>Format Alignment, Basic Proofreading, Fast Indexing Track</td>
+                        <td>Sedang (Moderate)</td>
+                        <td><a href="https://wa.me/6281234567890?text=Konsultasi%20Scopus%20Q3%20Q4" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.8rem;">Pilih Q3/Q4</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 style="color: #fff;">Simpul Insight Academy</h4>
+                <p>Lembaga Pengembangan Keahlian & Akselerasi Publikasi Ilmiah Bereputasi Terpercaya.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi Program</h4>
+                <ul>
+                    <li><a href="#bootcamp">Writing Bootcamp</a></li>
+                    <li><a href="#scopus">Pendampingan Scopus</a></li>
+                    <li><a href="#mitra">Mitra Banda Aceh</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mitra Strategis</h4>
+                <ul>
+                    <li><a href="https://www.simpulacademy.pro/" target="_blank">Simpul Academy Main Website</a></li>
+                    <li><a href="https://www.akademiksolusibna.online/" target="_blank">Akademik Solusi BNA</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak Fast-Response</h4>
+                <p>WhatsApp: +62 812-3456-7890<br>Email: info@simpulinsight.ac.id</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Simpul Insight Academy. All Rights Reserved. Progressive Web App Powered.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING PWA INSTALL BUTTON -->
+    <button id="pwaInstallBtn" class="btn btn-accent">📱 Install Aplikasi Web</button>
+
+    <!-- JAVASCRIPT: ACCESSIBILITY, PWA REGISTER, AND INSTALL PROMPT -->
+    <script>
+        // 1. Accessibility Font Size Resizer
+        let currentFontSize = 16;
+        function adjustFontSize(delta) {
+            currentFontSize = Math.min(Math.max(currentFontSize + delta, 14), 22);
+            document.body.style.fontSize = currentFontSize + 'px';
+        }
+        function resetFontSize() {
+            currentFontSize = 16;
+            document.body.style.fontSize = '16px';
+        }
+
+        // 2. Service Worker Registration for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker terdaftar sukses:', reg.scope))
+                    .catch(err => console.log('Gagal mendaftarkan Service Worker:', err));
+            });
+        }
+
+        // 3. PWA Install Prompt Handler
+        let deferredPrompt;
+        const installBtn = document.getElementById('pwaInstallBtn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBtn.style.display = 'block';
+        });
+
+        installBtn.addEventListener('click', () => {
+            installBtn.style.display = 'none';
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('Pengguna menerima instalasi PWA');
+                    }
+                    deferredPrompt = null;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
